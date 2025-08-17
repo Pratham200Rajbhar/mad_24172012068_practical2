@@ -24,7 +24,8 @@ This Android application showcases the **Activity Lifecycle** and a basic UI. Th
 2. [Project Structure](#project-structure)
 3. [Usage](#usage)
 4. [Screenshots](#screenshots)
-5. [Further Notes](#further-notes)
+5. [Activity Lifecycle Summary](#activity-lifecycle-summary)
+6. [Further Notes](#further-notes)
 
 ---
 
@@ -36,7 +37,6 @@ This Android application showcases the **Activity Lifecycle** and a basic UI. Th
     - The styled "Hello World" `TextView`
     - Lifecycle callbacks in `Logcat`
     - Toast messages as each lifecycle method is triggered
-
 
 ---
 
@@ -54,9 +54,28 @@ This Android application showcases the **Activity Lifecycle** and a basic UI. Th
 ---
 
 ##  Screenshots
-Attach your screenshot here (e.g., app screen or Logcat view) to demonstrate the UI or lifecycle logging.
-<img src="img.png" alt="App Screenshot" width="250"/>
-<img src="img1.png" alt="App Screenshot"/>
+Below are screenshots demonstrating the application UI and lifecycle logs:
+
+<p float="left">
+  <img src="img.png" alt="App Screenshot 1" width="300"/>
+  <img src="img1.png" alt="App Screenshot 2" width="300"/>
+</p>
+
+---
+
+##  Activity Lifecycle Summary
+Here’s a short explanation of each lifecycle method used in this project:
+
+- **`onCreate()`** → Called once when the activity is created. Initialize UI, set up layouts.
+- **`onStart()`** → Activity becomes visible to the user.
+- **`onResume()`** → Activity is now active and ready for interaction.
+- **`onPause()`** → Another activity is partially covering it. Pause lightweight processes.
+- **`onStop()`** → Activity is completely hidden. Release heavy resources.
+- **`onRestart()`** → Called before `onStart()` if activity is coming back from stopped state.
+- **`onDestroy()`** → Final cleanup before activity is destroyed.
+
+⚡ Quick flow: **Create → Start → Resume → (Running) → Pause → Stop → Restart/Destroy**
+
 ---
 
 ##  Further Notes
@@ -71,6 +90,7 @@ Attach your screenshot here (e.g., app screen or Logcat view) to demonstrate the
       Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show()
       Snackbar.make(findViewById(R.id.textViewHelloWorld), "onStart", Snackbar.LENGTH_SHORT).show()
   }
-  ```
+    ```
 
 - The design and behavior follow the specified AIM for Practical-2 ([sites.google.com](https://sites.google.com/ganpatuniversity.ac.in/mad/practical-list/practical-2)).
+g
