@@ -58,7 +58,7 @@ Below are screenshots demonstrating the application UI and lifecycle logs:
 
 <p float="left">
   <img src="img.png" alt="App Screenshot 1" width="300"/>
-  <img src="img1.png" alt="App Screenshot 2" width="300"/>
+  <img src="img1.png" alt="App Screenshot 2"/>
 </p>
 
 ---
