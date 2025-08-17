@@ -55,7 +55,7 @@ This Android application showcases the **Activity Lifecycle** and a basic UI. Th
 
 ##  Screenshots
 Attach your screenshot here (e.g., app screen or Logcat view) to demonstrate the UI or lifecycle logging.
-
+![img.png](img.png)
 ---
 
 ##  Further Notes
